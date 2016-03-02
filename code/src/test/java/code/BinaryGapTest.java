@@ -10,7 +10,7 @@ public class BinaryGapTest {
 	public void test() {
 		BinaryGap bg = new BinaryGap();
 		
-		assertEquals(1, bg.calculate(145));
+		assertEquals(3, bg.calculate(145));
 	}
 
 }
