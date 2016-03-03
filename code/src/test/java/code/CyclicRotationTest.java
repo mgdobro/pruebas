@@ -8,11 +8,23 @@ public class CyclicRotationTest {
 
 	@Test
 	public void test() {
-		int[] original = { 3, 8, 9, 7, 6 };
-		int[] expected = { 9, 7, 6, 3, 8 };
+		int[] original = { 1, 2, 3, 4, 5 };
+		int[] expected = { 3, 4, 5, 1, 2 };
+
+		CyclicRotation cr = new CyclicRotation();
+		
+		int[] actual = cr.solution(original, 3);
+
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void emptyArray() {
+		int[] original = { };
+		int[] expected = { };
 
 		CyclicRotation cr = new CyclicRotation();
 
-		assertEquals(expected, cr.solution(original, 3));
+		assertEquals(expected.length, cr.solution(original, 3).length);
 	}
 }
