@@ -9,7 +9,7 @@ public class CyclicRotationTest {
 	@Test
 	public void test() {
 		int[] original = { 1, 2, 3, 4, 5 };
-		int[] expected = { 3, 4, 5, 1, 2 };
+		int[] expected = { 4, 5, 1, 2, 3 };
 
 		CyclicRotation cr = new CyclicRotation();
 		
