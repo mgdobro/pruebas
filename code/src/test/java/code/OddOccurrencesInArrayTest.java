@@ -1,0 +1,33 @@
+package code;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class OddOccurrencesInArrayTest {
+
+	@Test
+	public void oddAtEnd() {
+		int[] original = {9,9,9,7,9,7,3};
+		int expected = 3;
+		
+		OddOccurrencesInArray oCIA = new OddOccurrencesInArray();
+		
+		int actual = oCIA.solution(original);
+		
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void oddAtBegin() {
+		int[] original = {3,9,9,7,9,7,9};
+		int expected = 3;
+		
+		OddOccurrencesInArray oCIA = new OddOccurrencesInArray();
+		
+		int actual = oCIA.solution(original);
+		
+		assertEquals(expected, actual);
+	}
+
+}
