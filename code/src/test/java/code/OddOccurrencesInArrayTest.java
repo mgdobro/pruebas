@@ -8,7 +8,7 @@ public class OddOccurrencesInArrayTest {
 
 	@Test
 	public void oddAtEnd() {
-		int[] original = {9,9,9,7,9,7,3};
+		int[] original = {9,4,3,9,7,4,7};
 		int expected = 3;
 		
 		OddOccurrencesInArray oCIA = new OddOccurrencesInArray();
