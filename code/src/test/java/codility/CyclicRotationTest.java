@@ -1,8 +1,10 @@
-package code;
+package codility;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import codility.CyclicRotation;
 
 public class CyclicRotationTest {
 

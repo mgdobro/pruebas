@@ -1,8 +1,10 @@
-package code;
+package codility;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import codility.TapeEquilibrium;
 
 public class TapeEquilibriumTest {
 
