@@ -1,4 +1,4 @@
-package code;
+package codility;
 
 public class MissingInteger {
 

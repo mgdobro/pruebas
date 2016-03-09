@@ -1,4 +1,4 @@
-package code;
+package codility;
 
 import static org.junit.Assert.*;
 
