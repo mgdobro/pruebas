@@ -19,22 +19,11 @@ public class InsertionSort {
 			System.out.println();
 
 			int value = ret[i];
-			int nextValue = 0;
-			boolean flag = false;
-			for (int j = 0; j < i - 1; j++) {
-
-				if (!flag) {
-					if (value < ret[j]) {
-						nextValue = ret[j];
-						ret[j] = value;
-						flag = true;
-					}
-				} else {
-					int tmp = ret[j];
-					ret[j]=nextValue;
-					nextValue=ret[j+1];
-				}
-
+			
+			for (int j = i-1; j >= 0 && ret[j] > value; j--) {
+				int tmp = ret[j];
+				ret[j] = value;
+				ret[j+1] = tmp;
 			}
 
 		}
